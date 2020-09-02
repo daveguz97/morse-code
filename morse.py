@@ -33,7 +33,7 @@ def decode_bits(bits):
 def decode_morse(morse):
     decipher = ''
     double_spaces = '  '
-    morse = morse.strip().split(double_spaces)
+    morse = morse.split(double_spaces)
     for word in morse:
         word = word.split()
         for letter in word:
